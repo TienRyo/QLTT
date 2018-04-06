@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<label for="startDateInternship"></label><input type="text" id="startDateInternship">
+<label for="endDateInternship"></label><input type="text" id="endDateInternship">
+<select name="" id="">
+    {% for company in companies %}
+    <option id="{{company.getId()}}">
+        {{company.getName()}}
+    </option>
+    {% endfor %}
+</select>
+<button id="addInternship">save</button>
+</body>
+<script src="/javascripts/jqueryInternship.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html>

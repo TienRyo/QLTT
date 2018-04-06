@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>course</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+</head>
+<body>
+    <select id="course">
+        {% for course  in courses %}
+        <option value="{{ course.getId() }}">
+            {{ course.getName() }}
+        </option>
+        {% endfor %}
+    </select>
+    <ul id="viewsInternship">
+
+    </ul>
+    <ul id="lecturer">
+
+    </ul>
+    <ul id="internshipList">
+
+    </ul>
+
+</body>
+<script id="internshipTemplate" type="text/html">
+    <li>
+        <a href="course/internship/confirmed/:id:" id="company" data-id=":id:">:company:</a>
+        <label for="">:startDate:</label>
+        <label for="">:endDate:</label>
+    </li>
+</script>
+<script id="template" type="text/html">
+    <h1>:Role:</h1>
+    <li><label>name : </label>:name:</li>
+    <li><label>gender : </label>:sex:</li>
+    <li><label>address : </label>:address:</li>
+    <li><label>phone : </label>:phone:</li>
+    <li><label>email : </label>:email:</li>
+</script>
+</html>
