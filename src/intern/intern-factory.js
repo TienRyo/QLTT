@@ -9,9 +9,9 @@ class InternFactory {
      */
     makeFromDB(raw) {
         let contact = new Contact();
-        let intern = new Intern(raw.name);
-        intern.setId(raw.id);
-        intern.setSex(raw.sex);
+        let intern = new Intern(raw.code);
+        intern.setName(raw.name);
+        intern.setGender(raw.gender);
         contact.setPhone(raw.phone);
         contact.setEmail(raw.email);
         intern.setAddress(raw.address);

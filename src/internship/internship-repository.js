@@ -10,16 +10,17 @@ class InternshipRepository {
         this.connection        = connection;
         this.internshipFactory = internshipFactory;
     }
-    searchByCourse(course_id) {
+    searchByCourse(course) {
         return this.connection
             .select( 'companies.id', 'companies.name', 'companies.phone', 'companies.email', 'companies.address',
-                'internships.id as internship_id', 'internships.startDate',
-                'internships.endDate', 'internships.status')
+                'internships.id as internship_id')
             .from('internships')
             .leftJoin('companies', function () {
                 this.on('companies.id', '=', 'internships.company_id')
-            }).where('internships.course_id', course_id)
-            .then(results => results.map(this.internshipFactory.makeFromDB));
+            }).where('internships.course_id', course.getId())
+            .then(results => results.map(internship=>
+                this.internshipFactory.makeFromDB(internship, course)
+            ));
     }
     create(internship) {
         return this.connection('internships').insert({

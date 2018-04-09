@@ -1,37 +1,37 @@
 class Intern {
-    constructor(name) {
+    constructor(code) {
+        this.code = code;
+    }
+
+    /**
+     *
+     * @param {string} name
+     */
+    setName(name) {
         this.name = name;
     }
     /**
      *
-     * @param {int} id
+     * @return {string}
      */
-    setId(id) {
-        this.id = id;
+    getCode() {
+        return this.code;
+    }
+
+    /**
+     *
+     * @param {string} gender
+     */
+    setGender(gender) {
+        this.gender = gender;
     }
 
     /**
      *
      * @return {string}
      */
-    getId() {
-        return this.id;
-    }
-
-    /**
-     *
-     * @param {string} sex
-     */
-    setSex(sex) {
-        this.sex = sex;
-    }
-
-    /**
-     *
-     * @return {string}
-     */
-    getSex() {
-        return this.sex;
+    getGender() {
+        return this.gender;
     }
     /**
      *

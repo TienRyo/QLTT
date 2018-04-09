@@ -23,32 +23,3 @@ $(document).ready(function () {
         })
     })
 });
-/*
-$(document).ready(function () {
-    $('#company').click(function () {
-        let id = $(this).val();
-        $.get('/course/internship/confirmed/'.concat(id)).then(templateInternshipList)
-    })
-});
-function templateInternshipList(internshipList) {
-    let template =  $('#template').html();
-    let resultHTML = function(){
-        return template.replace(':name:',internshipList.lecturer.name)
-            .replace(':sex:', internshipList.lecturer.sex)
-            .replace(':address:', internshipList.lecturer.address)
-            .replace(':phone:', internshipList.lecturer.contact.phone)
-            .replace(':email:', internshipList.lecturer.contact.email)
-            .replace(':Role:', 'Lecturer').join('');
-    };
-    $('#lecturer').html(resultHTML);/!*
-    let resultsHTML = internshipList.interns.map(function (intern) {
-            return template.replace(':name:',intern.name)
-                .replace(':gender:', intern.sex)
-                .replace(':address:', intern.address)
-                .replace(':phone:', intern.contact.phone)
-                .replace(':email:', intern.contact.email).join('');
-    });
-    $('#internshipList').html(resultsHTML);*!/
-
-}
-*/

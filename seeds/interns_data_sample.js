@@ -5,10 +5,10 @@ exports.seed = function(knex, Promise) {
         .then(function () {
             // Inserts seed entries
             return knex('interns').insert([
-                {id: 1, name: 'trung', sex : 'nam', phone: '03423423',email :'jack@', address : 'HN'},
-                {id: 2, name: 'hoang', sex : 'nam', phone: '03423423',email :'jack@', address : 'HN'},
-                {id: 3, name: 'toan', sex : 'nam', phone: '03423423',email :'jack@', address : 'HN'},
-                {id: 4, name: 'tuan', sex : 'nam', phone: '03423423',email :'jack@', address : 'HN'},
+                {code : '1', name: 'trung', gender : 'nam', phone: '03423423',email :'jack@', address : 'HN', status : 'STUDENT'},
+                {code : '2', name: 'hoang', gender : 'nam', phone: '03423423',email :'jack@', address : 'HN', status : "STUDENT"},
+                {code : '3', name: 'toan', gender : 'nam', phone: '03423423',email :'jack@', address : 'HN', status : "STUDENT"},
+                {code : '4', name: 'tuan', gender : 'nam', phone: '03423423',email :'jack@', address : 'HN', status : "STUDENT"},
             ]);
         });
 };

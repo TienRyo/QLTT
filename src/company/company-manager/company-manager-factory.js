@@ -1,21 +1,20 @@
+const CompanyManger = require('./company-manager');
+const Contact       = require('../../contact/contact');
 class CompanyManagerFactory {
-    constructor(companyManager, contact) {
-        this.companyManager = companyManager;
-        this.contact        = contact;
-    }
     /**
      *
      * @param raw
      * @return {CompanyManager}
      */
     makeFromDB(raw) {
-        this.companyManager.setId(raw.managerId);
-        this.companyManager.setName(raw.managerName);
-        this.companyManager.setAddress(raw.managerAddress);
-        this.contact.setPhone(raw.managerPhone);
-        this.contact.setEmail(raw.managerEmail);
-        this.companyManager.setContact(this.contact);
-        return this.companyManager;
+        let companyManager = new CompanyManger(raw.name);
+        let contact = new Contact();
+        companyManager.setId(raw.id);
+        companyManager.setAddress(raw.address);
+        contact.setPhone(raw.phone);
+        contact.setEmail(raw.email);
+        companyManager.setContact(contact);
+        return companyManager;
     }
 }
 module.exports = CompanyManagerFactory;

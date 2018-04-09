@@ -5,10 +5,10 @@ exports.up = function(knex, Promise) {
         table.string('name').notNull();
         table.string('phone');
         table.string('company_id');
-        table.string('sex');
+        table.string('gender');
         table.string('email');
         table.string('address');
-        table.datetime('deleted_at');
+        table.string('deleted_at');
     })
 };
 

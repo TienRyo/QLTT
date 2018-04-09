@@ -1,21 +1,6 @@
-const status = require('../../src/statuses');
-class InternshipIsOpen {
-
-    /**
-     *
-     * @param {Connection} connection
-     * @param internshipFactory
-     */
-    constructor(connection, internshipFactory) {
-        this.connection = connection;
-        this.internshipFactory = internshipFactory;
-    }
-    get(internship){
-        return this.connection('internShip').where({
-            id : internship.getId(),
-            status : status.OPEN
-        }).then(results => results.map(this.internshipFactory.makeFromDB))
-    }
-}
-
-module.exports = InternshipIsOpen;
+module.exports = function (request, response, next) {
+    request.app.get('internship.repository').get(request.params.id).then(result => {
+        request.internship = request.app.get('internship.factory').makeFromDB(result[0]);
+        next();
+    })
+};

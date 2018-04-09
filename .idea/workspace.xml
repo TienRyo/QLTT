@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b78e9a6-82b8-4b89-bd2d-b15a2d5fda98" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/controller/company-controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/controller/companyManager-controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/controller/controller-api/internship-list-controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/controller/controller-api/lecturer-controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/controller/controller-api/registration-controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/middleware/company-manager-request.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/middleware/company-request.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/middleware/is-course.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/authen/authen.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/company/company-manager/company-manager-repository.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/course/internship-list.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/intern/intern-provider.js" />
+      <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change beforePath="$PROJECT_DIR$/http/controller/course-controller.js" afterPath="$PROJECT_DIR$/http/controller/course-controller.js" />
+      <change beforePath="$PROJECT_DIR$/http/controller/intern-controller.js" afterPath="$PROJECT_DIR$/http/controller/intern-controller.js" />
+      <change beforePath="$PROJECT_DIR$/http/controller/internship-controller.js" afterPath="$PROJECT_DIR$/http/controller/internship-controller.js" />
+      <change beforePath="$PROJECT_DIR$/http/controller/internship-list-controller.js" afterPath="$PROJECT_DIR$/http/controller/internship-list-controller.js" />
+      <change beforePath="$PROJECT_DIR$/http/controller/lecturer-controller.js" afterPath="$PROJECT_DIR$/http/controller/lecturer-controller.js" />
+      <change beforePath="$PROJECT_DIR$/http/middleware/course-request.js" afterPath="$PROJECT_DIR$/http/middleware/course-request.js" />
+      <change beforePath="$PROJECT_DIR$/http/middleware/intern-ship-is-open.js" afterPath="$PROJECT_DIR$/http/middleware/intern-ship-is-open.js" />
+      <change beforePath="$PROJECT_DIR$/http/middleware/is-intern.js" afterPath="$PROJECT_DIR$/http/middleware/is-intern.js" />
+      <change beforePath="$PROJECT_DIR$/http/middleware/is-lecturer.js" afterPath="$PROJECT_DIR$/http/middleware/is-lecturer.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180327230658_create_table_courses.js" afterPath="$PROJECT_DIR$/migrations/20180327230658_create_table_courses.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180329163402_create_table_interns.js" afterPath="$PROJECT_DIR$/migrations/20180329163402_create_table_interns.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180329163432_create_table_lecturers.js" afterPath="$PROJECT_DIR$/migrations/20180329163432_create_table_lecturers.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180329163511_create_table_companys.js" afterPath="$PROJECT_DIR$/migrations/20180329163511_create_table_companys.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180329163629_create_table_company-managers.js" afterPath="$PROJECT_DIR$/migrations/20180329163629_create_table_company-managers.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180329163756_create_table_registrations.js" afterPath="$PROJECT_DIR$/migrations/20180329163756_create_table_registrations.js" />
+      <change beforePath="$PROJECT_DIR$/migrations/20180329165917_create_table_internships.js" afterPath="$PROJECT_DIR$/migrations/20180329165917_create_table_internships.js" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jqueryCourse.js" afterPath="$PROJECT_DIR$/public/javascripts/jqueryCourse.js" />
+      <change beforePath="$PROJECT_DIR$/router/router.js" afterPath="$PROJECT_DIR$/router/router.js" />
+      <change beforePath="$PROJECT_DIR$/seeds/company-managers_data_sample.js" afterPath="$PROJECT_DIR$/seeds/company-managers_data_sample.js" />
+      <change beforePath="$PROJECT_DIR$/seeds/courses_data_sample.js" afterPath="$PROJECT_DIR$/seeds/courses_data_sample.js" />
+      <change beforePath="$PROJECT_DIR$/seeds/interns_data_sample.js" afterPath="$PROJECT_DIR$/seeds/interns_data_sample.js" />
+      <change beforePath="$PROJECT_DIR$/seeds/internships_data_sample.js" afterPath="$PROJECT_DIR$/seeds/internships_data_sample.js" />
+      <change beforePath="$PROJECT_DIR$/seeds/lecturers_data_sample.js" afterPath="$PROJECT_DIR$/seeds/lecturers_data_sample.js" />
+      <change beforePath="$PROJECT_DIR$/seeds/registrations_data_sample.js" afterPath="$PROJECT_DIR$/seeds/registrations_data_sample.js" />
+      <change beforePath="$PROJECT_DIR$/src/company/company-manager/company-manager-factory.js" afterPath="$PROJECT_DIR$/src/company/company-manager/company-manager-factory.js" />
+      <change beforePath="$PROJECT_DIR$/src/company/company-manager/company-manager.js" afterPath="$PROJECT_DIR$/src/company/company-manager/company-manager.js" />
+      <change beforePath="$PROJECT_DIR$/src/company/company-repository.js" afterPath="$PROJECT_DIR$/src/company/company-repository.js" />
+      <change beforePath="$PROJECT_DIR$/src/company/company.js" afterPath="$PROJECT_DIR$/src/company/company.js" />
+      <change beforePath="$PROJECT_DIR$/src/course/course-repository.js" afterPath="$PROJECT_DIR$/src/course/course-repository.js" />
+      <change beforePath="$PROJECT_DIR$/src/course/course.js" afterPath="$PROJECT_DIR$/src/course/course.js" />
+      <change beforePath="$PROJECT_DIR$/src/intern/intern-factory.js" afterPath="$PROJECT_DIR$/src/intern/intern-factory.js" />
+      <change beforePath="$PROJECT_DIR$/src/intern/intern.js" afterPath="$PROJECT_DIR$/src/intern/intern.js" />
+      <change beforePath="$PROJECT_DIR$/src/internship/internship-factory.js" afterPath="$PROJECT_DIR$/src/internship/internship-factory.js" />
+      <change beforePath="$PROJECT_DIR$/src/internship/internship-repository.js" afterPath="$PROJECT_DIR$/src/internship/internship-repository.js" />
+      <change beforePath="$PROJECT_DIR$/src/internship/internship.js" afterPath="$PROJECT_DIR$/src/internship/internship.js" />
+      <change beforePath="$PROJECT_DIR$/src/internship/intership-list.js" afterPath="$PROJECT_DIR$/src/internship/intern-list.js" />
+      <change beforePath="$PROJECT_DIR$/src/lecturer/lecturer-reponsiroty.js" afterPath="$PROJECT_DIR$/src/lecturer/lecturer-provider.js" />
+      <change beforePath="$PROJECT_DIR$/src/session/session.js" afterPath="$PROJECT_DIR$/src/session/session.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/router/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="69" column="66" lean-forward="true" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-request.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/middleware/company-request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-manager-request.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/middleware/company-manager-request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course-request.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/middleware/course-request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-factory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/company/company-factory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-manager-repository.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/company/company-manager/company-manager-repository.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-manager-factory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/company/company-manager/company-manager-factory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="companyManager-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/controller/companyManager-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/http/controller/company-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company-repository.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/company/company-repository.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="34" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>company.</find>
+      <find>listener</find>
+      <find>var</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>companies</replace>
+      <replace>companies.</replace>
+      <replace>const</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/registration-policy</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/authen.js" />
+        <option value="$PROJECT_DIR$/src/intern/intern-repository.js" />
+        <option value="$PROJECT_DIR$/src/lecturer/lecturer-provider.js" />
+        <option value="$PROJECT_DIR$/src/intern/intern-provider.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/migrations/20180329163432_create_table_lecturers.js" />
+        <option value="$PROJECT_DIR$/migrations/20180329163511_create_table_companys.js" />
+        <option value="$PROJECT_DIR$/migrations/20180329163629_create_table_company-managers.js" />
+        <option value="$PROJECT_DIR$/seeds/company-managers_data_sample.js" />
+        <option value="$PROJECT_DIR$/seeds/registrations_data_sample.js" />
+        <option value="$PROJECT_DIR$/migrations/20180329163402_create_table_interns.js" />
+        <option value="$PROJECT_DIR$/http/controller/course-controller.js" />
+        <option value="$PROJECT_DIR$/http/controller/internship-list-controller.js" />
+        <option value="$PROJECT_DIR$/http/middleware/course-request.js" />
+        <option value="$PROJECT_DIR$/http/middleware/is-intern.js" />
+        <option value="$PROJECT_DIR$/http/middleware/is-lecturer.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/jqueryCourse.js" />
+        <option value="$PROJECT_DIR$/src/authen/authen.js" />
+        <option value="$PROJECT_DIR$/src/company/company-manager/company-manager.js" />
+        <option value="$PROJECT_DIR$/src/company/company.js" />
+        <option value="$PROJECT_DIR$/src/intern/intern.js" />
+        <option value="$PROJECT_DIR$/src/intern/intern-factory.js" />
+        <option value="$PROJECT_DIR$/src/course/internshipList.js" />
+        <option value="$PROJECT_DIR$/src/internship/intern-list.js" />
+        <option value="$PROJECT_DIR$/seeds/lecturers_data_sample.js" />
+        <option value="$PROJECT_DIR$/seeds/interns_data_sample.js" />
+        <option value="$PROJECT_DIR$/migrations/20180329163756_create_table_registrations.js" />
+        <option value="$PROJECT_DIR$/http/middleware/intern-ship-is-open.js" />
+        <option value="$PROJECT_DIR$/src/course/course.js" />
+        <option value="$PROJECT_DIR$/src/internship/internship.js" />
+        <option value="$PROJECT_DIR$/src/course/course-repository.js" />
+        <option value="$PROJECT_DIR$/seeds/courses_data_sample.js" />
+        <option value="$PROJECT_DIR$/seeds/internships_data_sample.js" />
+        <option value="$PROJECT_DIR$/migrations/20180329165917_create_table_internships.js" />
+        <option value="$PROJECT_DIR$/migrations/20180327230658_create_table_courses.js" />
+        <option value="$PROJECT_DIR$/src/course/course-factory.js" />
+        <option value="$PROJECT_DIR$/src/internship/internship-factory.js" />
+        <option value="$PROJECT_DIR$/src/course/internship-list.js" />
+        <option value="$PROJECT_DIR$/http/controller/internship-controller.js" />
+        <option value="$PROJECT_DIR$/src/internship/internship-repository.js" />
+        <option value="$PROJECT_DIR$/http/middleware/is-course.js" />
+        <option value="$PROJECT_DIR$/http/controller/intern-controller.js" />
+        <option value="$PROJECT_DIR$/http/controller/lecturer-controller.js" />
+        <option value="$PROJECT_DIR$/src/company/company-repository.js" />
+        <option value="$PROJECT_DIR$/src/company/company-manager/company-manager-repository.js" />
+        <option value="$PROJECT_DIR$/src/company/company-manager/company-manager-factory.js" />
+        <option value="$PROJECT_DIR$/http/middleware/company-request.js" />
+        <option value="$PROJECT_DIR$/http/middleware/company-manager-request.js" />
+        <option value="$PROJECT_DIR$/router/router.js" />
+        <option value="$PROJECT_DIR$/http/controller/companyManager-controller.js" />
+        <option value="$PROJECT_DIR$/http/controller/company-controller.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="34" />
+    <option name="width" value="1366" />
+    <option name="height" value="681" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="company-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="duration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="intern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="internship" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="internship-registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lecturer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="registration-policy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QLTT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QLTT" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="internship" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Book" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.9.4" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v8.9.4/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="ro&#9;FILE&#9;file:///home/tien/QLTT/router/router.js&#10;du&#9;null&#9;null&#10;ap&#9;FILE&#9;file:///home/tien/QLTT/app.js&#10;j&#9;FILE&#9;file:///home/tien/QLTT/public/javascripts/jquery.js&#10;jq&#9;FILE&#9;file:///home/tien/QLTT/public/javascripts/jquery.js&#10;cou&#9;FILE&#9;file:///home/tien/QLTT/src/course/course.js&#10;in&#9;FILE&#9;file:///home/tien/QLTT/src/internship-registration/internship-registration-service.js&#10;intern&#9;FILE&#9;file:///home/tien/QLTT/src/internship/internship-factory.js&#10;contac&#9;FILE&#9;file:///home/tien/QLTT/src/contact/contact.js" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/internship" />
+      <recent name="$PROJECT_DIR$/views/course" />
+      <recent name="$PROJECT_DIR$/src/registration-policy" />
+      <recent name="$PROJECT_DIR$/http/controller/controller-api" />
+      <recent name="$PROJECT_DIR$/src/internship" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/search-service/intern" />
+      <recent name="$PROJECT_DIR$/views/intern" />
+      <recent name="$PROJECT_DIR$/http/controller/controller-api" />
+      <recent name="$PROJECT_DIR$/views/internship" />
+      <recent name="$PROJECT_DIR$/http/controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b78e9a6-82b8-4b89-bd2d-b15a2d5fda98" name="Default" comment="" />
+      <created>1522488169981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522488169981</updated>
+      <workItem from="1522488172067" duration="17853000" />
+      <workItem from="1522576453319" duration="10024000" />
+      <workItem from="1522634726350" duration="25497000" />
+      <workItem from="1522679596634" duration="7984000" />
+      <workItem from="1522720624860" duration="10133000" />
+      <workItem from="1522807014622" duration="18203000" />
+      <workItem from="1522845805456" duration="11701000" />
+      <workItem from="1522892900885" duration="5879000" />
+      <workItem from="1522900786038" duration="18457000" />
+      <workItem from="1522928739151" duration="10943000" />
+      <workItem from="1522979231369" duration="7073000" />
+      <workItem from="1523018780724" duration="598000" />
+      <workItem from="1523110687895" duration="10490000" />
+      <workItem from="1523191397373" duration="4000" />
+      <workItem from="1523241453009" duration="13395000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="168234000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="34" width="1368" height="717" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35223368" sideWeight="0.5026061" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34827587" sideWeight="0.4973939" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/company/company-manager/company-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/authen/authen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/company/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contact/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intern/intern.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intern/intern-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intern/intern-provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/internship-registration/internship-registration-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/internship-registration/internship-registration-provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/company-managers_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180329163432_create_table_lecturers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/login_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/lecturers_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180329163629_create_table_company-managers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/companies_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/interns_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/registrations_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180329163402_create_table_interns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180329163756_create_table_registrations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/middleware/intern-ship-is-open.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/internship/internship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180329165917_create_table_internships.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/middleware/is-intern.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/course-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20180327230658_create_table_courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/duration/duration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/course/course.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/courses_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="80" lean-forward="false" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/internships_data_sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/course/course-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/internship/internship-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/internship/intern-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/course/internship-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/internship-list-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/course/course-repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/internship/internship-repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/internship-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/middleware/is-course.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" column="69" lean-forward="true" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/intern-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/lecturer-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/company/company-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/company/company-repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/company/company-manager/company-manager-repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/middleware/course-request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/middleware/company-request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/middleware/company-manager-request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="69" column="66" lean-forward="true" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/company/company-manager/company-manager-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/companyManager-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/controller/company-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

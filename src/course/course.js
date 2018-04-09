@@ -7,7 +7,19 @@ class Course {
         this.duration   = duration;
         this.name = name;
     }
-
+    /**
+     * @param {InternshipList} internshipList
+     */
+    setInternshipList(internshipList) {
+        this.internshipList = internshipList;
+    }
+    /**
+     *
+     * @return {InternshipList}
+     */
+    getInternshipList() {
+        return this.internshipList;
+    }
     /**
      *
      * @return {string}
@@ -15,20 +27,7 @@ class Course {
     getName() {
         return this.name;
     }
-    /**
-     *
-     * @param {Internship}internship
-     */
-    setInternship(internship) {
-        this.internship = internship;
-    }
-    /**
-     *
-     * @return {Internship}
-     */
-    getInternship() {
-        return this.internship;
-    }
+
     /**
      *
      * @return {Duration}
@@ -36,9 +35,19 @@ class Course {
     getDuration() {
         return this.duration;
     }
+
+    /**
+     *
+     * @param {string}status
+     */
     setStatus(status) {
         this.status = status;
     }
+
+    /**
+     *
+     * @return {string|*}
+     */
     getStatus() {
         return this.status;
     }
@@ -60,7 +69,3 @@ class Course {
 }
 
 module.exports = Course;
-
-
-
-//internship.getList().addIntern(me);

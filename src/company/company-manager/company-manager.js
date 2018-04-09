@@ -1,5 +1,7 @@
 class CompanyManager {
-
+    constructor(name) {
+        this.name = name;
+    }
     /**
      *
      * @param {int}id
@@ -17,25 +19,17 @@ class CompanyManager {
     }
     /**
      *
-     * @param {int} company_id
+     * @param {Company} company
      */
-    setCompany_id(company_id) {
-        this.company_id = company_id;
+    setCompany(company) {
+        this.company = company;
     }
     /**
      *
-     * @return {int}
+     * @return {Company}
      */
-    getCompany_id() {
-        return this.company_id;
-    }
-
-    /**
-     *
-     * @param {string} name
-     */
-    setName(name) {
-        this.name = name;
+    getCompany() {
+        return this.company;
     }
 
     /**

@@ -1,7 +1,7 @@
 class CourseController {
     all(request, response, next) {
         request.app.get('course.repository').all().then(function (results) {
-            response.render('course.njk', {courses : results})
+            response.json(results)
         }).catch(next);
     }
 

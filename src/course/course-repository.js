@@ -9,7 +9,7 @@ class CourseRepository {
     all() {
         return this.connection('courses')
             .where({deleted_at: null, status: status.OPEN})
-            .then(courseRawData =>courseRawData.map(this.courseFactory.makeFromDB));
+            .then(courses =>courses.map(this.courseFactory.makeFromDB));
     }
 
     get(id) {
@@ -24,7 +24,10 @@ class CourseRepository {
             startDate : course.getDuration().getStartDate(),
             endDate : course.getDuration().getEndDate(),
             status : status.OPEN
-        }).then(course_id=>course_id)
+        }).then(course_id=> {
+            course.setId(course_id);
+            return course;
+        })
     }
 
     update(course) {
@@ -33,8 +36,7 @@ class CourseRepository {
             startDate : course.getDuration().getStartDate(),
             endDate : course.getDuration().getEndDate(),
             status : course.getStatus()
-        }).where('id', course.getId()
-        ).then(()=>course)
+        }).where('id', course.getId())
     }
 
     remove(id) {

@@ -5,9 +5,9 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // insertships seed entries
       return knex('internships').insert([
-        {id: 1, course_id: '1',startDate: '2018/1.1',endDate : '2018/2/2', lecturer_id :'1', company_id: '1', status : 'OPEN'},
-        {id: 2, course_id: '1',startDate: '2018/1.1',endDate : '2018/2/2', lecturer_id :'1', company_id: '2', status : 'OPEN'},
-        {id: 3, course_id: '2',startDate: '2018/1.1',endDate : '2018/2/2', lecturer_id :'2', company_id: '3', status : 'CLOSE'},
+        {id: 1, course_id: '1', lecturer_code :'1',deadline : '1996/1/1', company_id: '1'},
+        {id: 2, course_id: '1', lecturer_code :'1',deadline : '1996/1/1',  company_id: '2'},
+        {id: 3, course_id: '2', lecturer_code :'2',deadline : '1996/1/1',  company_id: '3'},
       ]);
     });
 };

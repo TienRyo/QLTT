@@ -1,19 +1,34 @@
 class Internship {
     /**
-     * @param {Duration} duration
      * @param {Company} company
-     * @param {Course} course
      */
-    constructor(duration, company, course) {
-        this.duration = duration;
+    constructor(company) {
         this.company  = company;
-        this.course   = course;
     }
 
     /**
      *
-     * @return {Course}
+     * @param deadline
      */
+    setDeadline(deadline) {
+        this.deadline = deadline;
+    }
+
+    /**
+     *
+     * @return {*}
+     */
+    getDeadline() {
+        return this.deadline;
+    }
+
+    /**
+     *
+     * @param course
+     */
+    setCourse(course) {
+        this.course = course;
+    }
     getCourse() {
         return this.course;
     }
@@ -71,13 +86,6 @@ class Internship {
         return this.company;
     }
 
-    /**
-     *
-     * @return {Duration}
-     */
-    getDuration() {
-        return this.duration;
-    }
 }
 
 module.exports = Internship;

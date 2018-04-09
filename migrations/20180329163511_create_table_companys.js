@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
         table.string('phone');
         table.string('email');
         table.string('address');
-        table.datetime('deleted_at');
+        table.string('deleted_at');
     })
 };
 
